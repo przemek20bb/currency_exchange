@@ -1,0 +1,64 @@
+<tabela_kursow typ="C" uid="20c056">
+<numer_tabeli>056/C/NBP/2020</numer_tabeli>
+<data_notowania>2020-03-19</data_notowania>
+<data_publikacji>2020-03-20</data_publikacji>
+<pozycja>
+<nazwa_waluty>dolar</nazwa_waluty>
+<przelicznik>1</przelicznik>
+<kod_waluty>USD</kod_waluty>
+<kurs_kupna>4,1833</kurs_kupna>
+<kurs_sprzedazy>4,2679</kurs_sprzedazy>
+<nazwa_waluty>dolar australijski</nazwa_waluty>
+<przelicznik>1</przelicznik>
+<kod_waluty>AUD</kod_waluty>
+<kurs_kupna>2,4515</kurs_kupna>
+<kurs_sprzedazy>2,5011</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<kurs_kupna>2,8840</kurs_kupna>
+<kurs_sprzedazy>2,9422</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<nazwa_waluty>euro</nazwa_waluty>
+<przelicznik>1</przelicznik>
+<kod_waluty>EUR</kod_waluty>
+<kurs_kupna>4,5138</kurs_kupna>
+<kurs_sprzedazy>4,6050</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<nazwa_waluty>forint (Węgry)</nazwa_waluty>
+<przelicznik>100</przelicznik>
+<kod_waluty>HUF</kod_waluty>
+<kurs_kupna>1,2619</kurs_kupna>
+<kurs_sprzedazy>1,2873</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<nazwa_waluty>frank szwajcarski</nazwa_waluty>
+<przelicznik>1</przelicznik>
+<kod_waluty>CHF</kod_waluty>
+<kurs_kupna>4,2844</kurs_kupna>
+<kurs_sprzedazy>4,3710</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<nazwa_waluty>funt szterling</nazwa_waluty>
+<przelicznik>1</przelicznik>
+<kod_waluty>GBP</kod_waluty>
+<kurs_kupna>4,8978</kurs_kupna>
+<kurs_sprzedazy>4,9968</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<nazwa_waluty>jen (Japonia)</nazwa_waluty>
+<przelicznik>100</przelicznik>
+<kod_waluty>JPY</kod_waluty>
+<kurs_kupna>3,8091</kurs_kupna>
+<kurs_sprzedazy>3,8861</kurs_sprzedazy>
+</pozycja>
+<pozycja>
+<nazwa_waluty>korona czeska</nazwa_waluty>
+<przelicznik>1</przelicznik>
+<kod_waluty>CZK</kod_waluty>
+<kurs_kupna>0,1632</kurs_kupna>
+<kurs_sprzedazy>0,1664</kurs_sprzedazy>
+</pozycja>
+</tabela_kursow>123 123 
+aaa
