@@ -1,4 +1,4 @@
-#to ma byc funkcja przyjmująca sciezke do plku .txt i zwracająca kursy euro
+#to ma byc funkcja przyjmująca sciezke do plku .txt i nazwe waluty, a zwracająca kurs tej waluty
 def reading_rate(sciezka,waluta):
     f = open(sciezka,mode="r+")
     lista1=f.readlines()
@@ -23,4 +23,3 @@ def reading_rate(sciezka,waluta):
 #reading_rate("kursy_walut.txt","frank szwajcarski")
 #frank=reading_rate("kursy_walut.txt","frank szwajcarski")
 #print(frank)
-# jak wczytac zmienna zwracana przez funkcje?
