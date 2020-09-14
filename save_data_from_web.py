@@ -7,7 +7,7 @@ import requests
 # pobieram dzisiejszą datę
 today = date.today()
 # format wyświetlanej daty
-data = today.strftime('%Y-%m-%d')
+data = today.strftime('%Y-%9-%d')
 print ("DATA: " + data)
 # adres strony z horoskopem
 urlwyborcza = 'https://horoskopy.gazeta.pl/horoskop/byk/dzienny/'
