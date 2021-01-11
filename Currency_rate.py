@@ -1,25 +1,41 @@
-#to ma byc funkcja przyjmująca sciezke do plku .txt i nazwe waluty, a zwracająca kurs tej waluty
-def reading_rate(sciezka,waluta):
-    f = open(sciezka,mode="r+")
-    lista1=f.readlines()
-    #print(lista1)
-    f.close()
-    y=waluta
-    m="<nazwa_waluty>"+(y)+"</nazwa_waluty>\n"
-    #print(m)
-    k=lista1.index(m)
+import requests
 
-    w=lista1[k+3]
-    t=lista1[k+4]
-    #print(w)
-    #print(t)
+#funkcja przyjmująca  nazwe waluty, a zwracająca kurs sprzedaży tej waluty
+def reading_rate_sale(waluta):
 
-    l= w[12:16].replace(",",".")
-    #print ("Kurs kupna: "+ str (l))
+    res = requests.get('https://www.nbp.pl/kursy/xml/LastC.xml')
+    res.raise_for_status() # check if is positive response
+    hej = res.text
+    lista_nbp=[]
+    lista_nbp=hej.splitlines()
+    #mozna zrobic w petli druga liste z usunieciem spacji - lstrip()
+    #print(lista_nbp)
+    m = "      <nazwa_waluty>"+(waluta)+"</nazwa_waluty>"
+    k=lista_nbp.index(m)
+    #print("miejsce tej waluty na liscie nbp to: " + str(k))
+    w=lista_nbp[k+3]
+    t=lista_nbp[k+4]
 
-    r= t[16:20].replace(",",".")
+    r= t[22:26].replace(",",".")
     #print ("Kurs sprzedazy: "+ str (r))
     return r
-#reading_rate("kursy_walut.txt","frank szwajcarski")
-#frank=reading_rate("kursy_walut.txt","frank szwajcarski")
-#print(frank)
+
+#funkcja przyjmująca  nazwe waluty, a zwracająca kurs kupna tej waluty
+def reading_rate_buy(waluta):
+
+    res = requests.get('https://www.nbp.pl/kursy/xml/LastC.xml')
+    res.raise_for_status() # check if is positive response
+    hej = res.text
+    lista_nbp=[]
+    lista_nbp=hej.splitlines()
+    #print(lista_nbp)
+    m = "      <nazwa_waluty>"+(waluta)+"</nazwa_waluty>"
+    k=lista_nbp.index(m)
+    #print("miejsce tej waluty na liscie nbp to: " + str(k))
+    w=lista_nbp[k+3]
+    t=lista_nbp[k+4]
+
+    l= w[18:22].replace(",",".")
+    #print ("Kurs kupna: "+ str (l))
+
+    return l
