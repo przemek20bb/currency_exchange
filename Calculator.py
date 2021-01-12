@@ -39,15 +39,18 @@ while wybor_transakcji <=0 or wybor_transakcji > 2:
         wybor_transakcji=int(input())
         if str(wybor_transakcji) == "1":
             operacja = "sprzedaż"
+            print("Aktualny kurs " + waluta + " wynosi:" + reading_rate_buy(waluta) + " (Po takim kursie nastąpi " + operacja + ")")
+            x=reading_rate_buy(waluta)
         elif str(wybor_transakcji) == "2":
             operacja = "kupno"
+            print("Aktualny kurs " + waluta + " wynosi:" + reading_rate_sale(waluta) + " (Po takim kursie nastąpi " + operacja + ")")
+            x=reading_rate_buy(waluta)
         else:
             print("wprowadziles wartosc liczby spoza zakresu,spróbuj jeszcze raz")
     except ValueError:
         print("Nie wprowadziłes/as liczby, spróbuj jeszcze raz")
 
 
-print("Aktualny kurs " + waluta + " wynosi:" + reading_rate_sale(waluta) + " (" +operacja+ ")")
 print("W jakiej ilosci ma nastapic "+ operacja + " " + waluta)
 #cześć kodu odpowiedzialna za podanie ilosci waluty
 waluta_na_sprzedaz_kupno_ilosc=0
@@ -58,8 +61,8 @@ while waluta_na_sprzedaz_kupno_ilosc <=0:
             print("wprowadziles wartosc liczby <=0,spróbuj jeszcze raz")
     except ValueError:
         print("Nie wprowadziłes/as liczby, spróbuj jeszcze raz")
-waluta_wartosc_sprzedazy_kupna = float(reading_rate_sale(waluta)) * float((waluta_na_sprzedaz_kupno_ilosc))
-print("Wartosc transakcji " + operacja + " " + str(waluta_na_sprzedaz_kupno_ilosc) + " " + waluta + " wynosi: " + str(waluta_wartosc_sprzedazy_kupna))
+waluta_wartosc_sprzedazy_kupna = float(x) * float((waluta_na_sprzedaz_kupno_ilosc))
+print("Wartosc transakcji " + operacja + " " + str(waluta_na_sprzedaz_kupno_ilosc) + " " + waluta + " wynosi: " + str(round(waluta_wartosc_sprzedazy_kupna,2)))
 
 
 

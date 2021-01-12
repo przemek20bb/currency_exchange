@@ -8,7 +8,7 @@ Calculator 1.0:
 Calculator 2.0:
 1.Wybor czy chce sprzedac czy kupic waluty 
 2.kupno walut - pytanie ile mam pieniedzy i wyswietlenie ile moge za to kupic danej waluty
-#3.petla
+#3.petla - narazie bezsensu
 4. zamiast wyswietlenia kursu danej waluty to wyswietlic na poczatku w tabelce wszyskie waluty ( sprzedaz i kupno)
 
 Calculator 3.0:
