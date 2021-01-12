@@ -13,7 +13,7 @@ Calculator 2.0:
 
 Calculator 3.0:
 5.wyjatki
-#6.testy jednostkowe?
+#6.testy jednostkowe? - jeden przykładowy napisany, w przyszłości można coś dorzucić jeszcze jak rozbuduję
 
 
 Calculator 4.0:

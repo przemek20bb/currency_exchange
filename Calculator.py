@@ -3,6 +3,8 @@ from Currency_rate import reading_rate_sale
 from Currency_rate import reading_rate_buy
 from parsowanie_walut import parsowanie_listy_walut
 
+
+
 czas=datetime.datetime.now()
 actual_date=czas.strftime("%I:%M %d.%m.%Y %A")
 lista_walut = ["euro","dolar amerykañski","frank szwajcarski","funt szterling","korona czeska","korona szwedzka","korona duñska","korona norweska"]
@@ -28,6 +30,10 @@ while rodzaj_waluty <=0 or rodzaj_waluty > len(lista_walut):
                 print("wprowadziles wartosc liczby >" + str(len(lista_walut)) +" spróbuj jeszcze raz")
     except ValueError:
         print("Nie wprowadziłes/as liczby, spróbuj jeszcze raz")
+
+#test sprawdzający czy poadana przez nas liczba jest w zakresie listy wyswietlonych walut
+def test_is_currency():
+    assert int(rodzaj_waluty)<=len(lista_walut)
 
 waluta = lista_walut[int(rodzaj_waluty)-1]
 print("Wybrana waluta to: "+ waluta)
