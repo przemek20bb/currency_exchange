@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\Przemek\Desktop\Python\Python_projects\kantor_online\venv"
+$env:VIRTUAL_ENV="C:\Users\Przemek\Desktop\currency_exchange\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Przemek\Desktop\Python\Python_projects\kantor_online\venv"
+VIRTUAL_ENV="C:\Users\Przemek\Desktop\currency_exchange\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
